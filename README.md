@@ -1,24 +1,18 @@
-# componentes
+# Comunicación entre componentes
 
-## Project setup
+## Una vez clonado
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Levantar el proyecto en el servidor de desarrollo
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### En caso de querer compilar para producción
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
