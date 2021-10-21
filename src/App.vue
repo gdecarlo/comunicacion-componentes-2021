@@ -1,7 +1,10 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Otra instancia" :titulo="miTituloEnPadre" @avisar="mostrarAlerta"/>
+    <hr>
+    <h3 v-if="showAlerta">El nivel llegó a 3</h3>
   </div>
 </template>
 
@@ -11,8 +14,19 @@ import HelloWorld from './components/HelloWorld.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HelloWorld: HelloWorld
+  },
+  data() {
+    return {
+      miTituloEnPadre:"un titulo",
+      showAlerta: false
+    }
+  },
+  methods: {
+    mostrarAlerta(){
+      this.showAlerta = true
+    }
+  },
 }
 </script>
 
